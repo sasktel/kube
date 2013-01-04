@@ -406,7 +406,7 @@ kbd {
   border-style: solid solid none;
   border-width: 1px 1px medium;
   color: #444;
-  font-weight: bold;
+  font-weight: normal;
   white-space: nowrap;
 }
 input[type="text"],
@@ -619,6 +619,10 @@ input[type="checkbox"] {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="datetime"],
+input[type="number"],
+input[type="date"],
 textarea {
   position: relative;
   z-index: 2;
@@ -676,7 +680,8 @@ textarea:focus {
   border-color: #5ca9e4;
   box-shadow: 0 0 0 2px rgba(70, 161, 231, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset;
 }
-input.input-search {
+input.input-search,
+input[type="search"] {
   padding-right: 10px;
   padding-left: 10px;
   margin-bottom: 0;
